@@ -1,0 +1,139 @@
+{
+  "process": {
+    "en": {
+      "title": "West Bengal Election Process",
+      "steps": [
+        "The Election Commission announces the poll schedule, constituency details, and important deadlines.",
+        "Candidates file nominations, and their papers are checked before the final candidate list is published.",
+        "Campaigning takes place across the constituency until the official campaign cut-off.",
+        "Polling happens at assigned booths, where voters verify identity and cast their vote.",
+        "After polling closes, votes are counted and the result is declared for the constituency."
+      ],
+      "extra": "This guide leans toward West Bengal election practice, but the exact instructions still depend on the official notice for your area."
+    },
+    "bn": {
+      "title": "পশ্চিমবঙ্গের নির্বাচনী প্রক্রিয়া",
+      "steps": [
+        "নির্বাচন কমিশন ভোটের তারিখ, কেন্দ্রভিত্তিক তথ্য এবং গুরুত্বপূর্ণ শেষ তারিখ ঘোষণা করে।",
+        "প্রার্থীরা মনোনয়ন জমা দেন, তারপর কাগজপত্র যাচাই করে চূড়ান্ত প্রার্থী তালিকা প্রকাশ করা হয়।",
+        "নির্ধারিত সময়সীমা পর্যন্ত বিভিন্ন কেন্দ্রে প্রচারপর্ব চলে।",
+        "ভোটের দিনে নির্দিষ্ট বুথে গিয়ে পরিচয় যাচাই করে ভোট দিতে হয়।",
+        "ভোটগ্রহণ শেষ হলে গণনা হয় এবং কেন্দ্রভিত্তিক ফল ঘোষণা করা হয়।"
+      ],
+      "extra": "এই গাইডটি পশ্চিমবঙ্গকে মাথায় রেখে লেখা, তবে আপনার এলাকার সরকারি নির্দেশ অবশ্যই মিলিয়ে দেখবেন।"
+    },
+    "hi": {
+      "title": "पश्चिम बंगाल चुनाव प्रक्रिया",
+      "steps": [
+        "चुनाव आयोग मतदान की तारीख, निर्वाचन क्षेत्र की जानकारी और जरूरी समय-सीमाएं घोषित करता है।",
+        "उम्मीदवार नामांकन दाखिल करते हैं, फिर जांच के बाद अंतिम उम्मीदवार सूची जारी होती है।",
+        "आधिकारिक समय-सीमा तक क्षेत्र में प्रचार चलता है।",
+        "मतदान के दिन मतदाता तय बूथ पर जाकर पहचान सत्यापित करते हैं और वोट डालते हैं।",
+        "मतदान समाप्त होने के बाद मतगणना होती है और परिणाम घोषित किए जाते हैं।"
+      ],
+      "extra": "यह गाइड पश्चिम बंगाल के संदर्भ में है, लेकिन अपने क्षेत्र की आधिकारिक सूचना जरूर जांचें।"
+    }
+  },
+  "votingSteps": {
+    "en": {
+      "title": "How To Vote In West Bengal",
+      "steps": [
+        "Check your name in the electoral roll and note your polling booth before election day.",
+        "Carry your EPIC voter card or another accepted identity document.",
+        "Reach the polling station during the official voting hours for your constituency.",
+        "Follow booth instructions, complete identity verification, and receive access to the ballot or EVM.",
+        "Cast your vote carefully and confirm the process before leaving the booth."
+      ],
+      "extra": "If local officials issue booth-specific instructions, follow those first."
+    },
+    "bn": {
+      "title": "পশ্চিমবঙ্গে কীভাবে ভোট দেবেন",
+      "steps": [
+        "ভোটের আগে ভোটার তালিকায় আপনার নাম আছে কি না এবং আপনার বুথ কোথায়, তা দেখে নিন।",
+        "EPIC ভোটার কার্ড বা স্বীকৃত অন্য পরিচয়পত্র সঙ্গে রাখুন।",
+        "আপনার কেন্দ্রের নির্ধারিত সময়ের মধ্যে ভোটকেন্দ্রে পৌঁছান।",
+        "বুথের নির্দেশ মেনে পরিচয় যাচাই করুন এবং ব্যালট বা EVM ব্যবহারের অনুমতি নিন।",
+        "সাবধানে ভোট দিন এবং প্রক্রিয়া শেষ হয়েছে কি না নিশ্চিত হয়ে বুথ ছাড়ুন।"
+      ],
+      "extra": "স্থানীয় ভোটকর্মীরা আলাদা নির্দেশ দিলে সেটাই আগে অনুসরণ করুন।"
+    },
+    "hi": {
+      "title": "पश्चिम बंगाल में वोट कैसे दें",
+      "steps": [
+        "मतदान से पहले मतदाता सूची में अपना नाम और अपना मतदान केंद्र जांच लें।",
+        "EPIC वोटर कार्ड या कोई अन्य मान्य पहचान पत्र साथ रखें।",
+        "अपने निर्वाचन क्षेत्र के तय समय के भीतर मतदान केंद्र पहुंचें।",
+        "बूथ के निर्देशों के अनुसार पहचान सत्यापन कराएं और बैलेट या EVM तक पहुंच लें।",
+        "ध्यान से वोट डालें और प्रक्रिया पूरी होने की पुष्टि करके ही बाहर निकलें।"
+      ],
+      "extra": "यदि स्थानीय मतदान अधिकारी कोई विशेष निर्देश दें, तो उन्हें प्राथमिकता दें।"
+    }
+  },
+  "eligibility": {
+    "en": {
+      "title": "Voting Eligibility",
+      "steps": [
+        "You should be at least 18 years old on the qualifying date announced for the voter roll.",
+        "You should be registered as a voter in the relevant constituency.",
+        "Your name should appear correctly in the electoral roll for your booth area.",
+        "You should carry an accepted identity document on polling day."
+      ],
+      "extra": "For Bengal-focused questions, voters usually check booth details through the electoral roll and local election notices."
+    },
+    "bn": {
+      "title": "ভোটদানের যোগ্যতা",
+      "steps": [
+        "ভোটার তালিকার জন্য নির্ধারিত যোগ্যতার তারিখে আপনার বয়স কমপক্ষে ১৮ বছর হতে হবে।",
+        "আপনাকে সংশ্লিষ্ট কেন্দ্রের ভোটার হিসেবে নথিভুক্ত থাকতে হবে।",
+        "আপনার বুথ এলাকার ভোটার তালিকায় নাম সঠিকভাবে থাকতে হবে।",
+        "ভোটের দিনে স্বীকৃত পরিচয়পত্র সঙ্গে রাখতে হবে।"
+      ],
+      "extra": "পশ্চিমবঙ্গের ক্ষেত্রে বুথ ও ভোটার তালিকার তথ্য আগে দেখে নেওয়া খুবই জরুরি।"
+    },
+    "hi": {
+      "title": "मतदान पात्रता",
+      "steps": [
+        "मतदाता सूची की योग्यता तिथि पर आपकी उम्र कम से कम 18 वर्ष होनी चाहिए।",
+        "आपका नाम संबंधित निर्वाचन क्षेत्र के मतदाता के रूप में पंजीकृत होना चाहिए।",
+        "आपका नाम आपके बूथ क्षेत्र की मतदाता सूची में सही तरीके से होना चाहिए।",
+        "मतदान के दिन आपके पास मान्य पहचान पत्र होना चाहिए।"
+      ],
+      "extra": "पश्चिम बंगाल के संदर्भ में बूथ और मतदाता सूची की जानकारी पहले से जांचना सबसे उपयोगी रहता है।"
+    }
+  },
+  "timeline": {
+    "en": {
+      "title": "Election Timeline",
+      "steps": [
+        "Voter roll updates and booth information are published before the final polling phase.",
+        "Nomination filing and scrutiny happen before the final list of candidates is locked.",
+        "Campaigning continues until the official silence period begins.",
+        "Polling is held on the scheduled day for the constituency or phase.",
+        "Counting and result declaration happen after polling ends, based on the official schedule."
+      ],
+      "extra": "Always check the official election schedule because phase-wise voting can differ across districts."
+    },
+    "bn": {
+      "title": "নির্বাচনের সময়রেখা",
+      "steps": [
+        "চূড়ান্ত ভোটের আগে ভোটার তালিকা হালনাগাদ ও বুথ-তথ্য প্রকাশ করা হয়।",
+        "মনোনয়ন জমা ও যাচাই শেষ হওয়ার পরে চূড়ান্ত প্রার্থী তালিকা নির্ধারিত হয়।",
+        "নির্বাচনী নীরবতা শুরু হওয়ার আগে পর্যন্ত প্রচার চলে।",
+        "নির্ধারিত দিন বা ধাপে সংশ্লিষ্ট কেন্দ্রে ভোটগ্রহণ হয়।",
+        "ভোটের পরে সরকারি সূচি অনুযায়ী গণনা ও ফল ঘোষণা করা হয়।"
+      ],
+      "extra": "জেলা বা ধাপভেদে ভোটের সূচি আলাদা হতে পারে, তাই সরকারি ক্যালেন্ডার দেখে নিন।"
+    },
+    "hi": {
+      "title": "चुनाव समयरेखा",
+      "steps": [
+        "अंतिम मतदान चरण से पहले मतदाता सूची अपडेट और बूथ जानकारी जारी की जाती है।",
+        "नामांकन और जांच के बाद अंतिम उम्मीदवार सूची तय होती है।",
+        "आधिकारिक साइलेंस पीरियड शुरू होने तक प्रचार चलता है।",
+        "निर्धारित दिन या चरण में संबंधित निर्वाचन क्षेत्र में मतदान होता है।",
+        "मतदान के बाद आधिकारिक कार्यक्रम के अनुसार मतगणना और परिणाम घोषित होते हैं।"
+      ],
+      "extra": "जिले या चरण के अनुसार मतदान की तिथियां बदल सकती हैं, इसलिए आधिकारिक कार्यक्रम जरूर देखें।"
+    }
+  }
+}
