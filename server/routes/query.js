@@ -227,6 +227,10 @@ async function askGemini(question, language, history) {
   }
 
   try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 7000);
+    const trimmedHistory = Array.isArray(history) ? history.slice(-6) : [];
+
     const result = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`,
       {
@@ -234,6 +238,7 @@ async function askGemini(question, language, history) {
         headers: {
           "Content-Type": "application/json"
         },
+        signal: controller.signal,
         body: JSON.stringify({
           contents: [
             {
@@ -255,7 +260,7 @@ Return valid JSON only with this exact shape:
 }
 Keep it short, practical, and avoid unsupported current political claims.
 Recent chat history:
-${JSON.stringify(history || [])}
+${JSON.stringify(trimmedHistory)}
 Question: ${question}`
                 }
               ]
@@ -267,6 +272,8 @@ Question: ${question}`
         })
       }
     );
+
+    clearTimeout(timeout);
 
     if (!result.ok) {
       const rawError = await result.text();
@@ -294,38 +301,45 @@ Question: ${question}`
     };
   } catch (error) {
     return {
-      error: "unavailable",
+      error: error.name === "AbortError" ? "timeout" : "unavailable",
       rawError: error.message
     };
   }
 }
 
 router.post("/", async (req, res) => {
-  const question = req.body?.question || "";
-  const history = Array.isArray(req.body?.history) ? req.body.history : [];
-  const language = detectLanguage(question);
-  const matchedTopic = pickTopic(question);
-  const rememberedTopic =
-    !matchedTopic && isFollowUpQuestion(question)
-      ? getTopicFromHistory(history)
-      : null;
-  const topicToUse = matchedTopic || rememberedTopic;
+  try {
+    const question = req.body?.question || "";
+    const history = Array.isArray(req.body?.history) ? req.body.history : [];
+    const language = detectLanguage(question);
+    const matchedTopic = pickTopic(question);
+    const rememberedTopic =
+      !matchedTopic && isFollowUpQuestion(question)
+        ? getTopicFromHistory(history)
+        : null;
+    const topicToUse = matchedTopic || rememberedTopic;
 
-  if (topicToUse) {
-    return res.json(getTopicResponse(topicToUse, language));
+    if (topicToUse) {
+      return res.json(getTopicResponse(topicToUse, language));
+    }
+
+    const geminiReply = await askGemini(question, language, history);
+
+    if (geminiReply?.title) {
+      return res.json(geminiReply);
+    }
+
+    if (geminiReply?.error) {
+      return res.json(getGeminiUnavailableResponse(geminiReply.error, language));
+    }
+
+    return res.json(getFallbackResponse(language));
+  } catch (error) {
+    const language = detectLanguage(req.body?.question || "");
+    return res
+      .status(200)
+      .json(getGeminiUnavailableResponse("unavailable", language));
   }
-
-  const geminiReply = await askGemini(question, language, history);
-
-  if (geminiReply?.title) {
-    return res.json(geminiReply);
-  }
-
-  if (geminiReply?.error) {
-    return res.json(getGeminiUnavailableResponse(geminiReply.error, language));
-  }
-
-  return res.json(getFallbackResponse(language));
 });
 
 module.exports = router;
